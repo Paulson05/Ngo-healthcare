@@ -1,22 +1,28 @@
-$(document).on('ready', function() { 
-$('.post-gallery').owlCarousel({
-    loop:true,
-    margin:10,
-    nav:false,
-    dots: true,
-    autoplay: true,
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:1
-        },
-        1000:{
-            items:1
-        }
-    }
-})
+$(document).on('ready', function() {
+
+    $("#post-gallery").owlCarousel({
+
+        navigation: false, // Show next and prev buttons
+        slideSpeed: 3000,
+        paginationSpeed: 400,
+        singleItem: true,
+        pagination: true,
+        autoPlay: true,
+        addClassActive: true
+        
+
+        // "singleItem:true" is a shortcut for:
+        // items : 1, 
+        // itemsDesktop : false,
+        // itemsDesktopSmall : false,
+        // itemsTablet: false,
+        // itemsMobile : false
+
+    });
+
 });
- 
+
+
+
+
 
